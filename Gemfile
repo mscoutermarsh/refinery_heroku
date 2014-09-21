@@ -59,6 +59,7 @@ gem 'heroku'
 
 # Fog allows you to use S3 assets (added for Heroku)
 gem 'fog'
+gem 'rails_12factor', group: :production
 
 # Postgres support (added for Heroku)
 gem 'pg'
