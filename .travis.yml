@@ -1,7 +1,8 @@
 deploy:
   provider: heroku
-  app:
-    travis: refinery-staging
   api_key:
     secure: aM9y/Nwri5oxLf6MPoM9q+3oQghOvRcSZk+8qMeEYQnG9CJNLCMvD7+18Pa21bUdlaunAA1kuE2ijHk/wN+/+PiKk8BPaBr+uspecBGFnRcoZuoH9PIksdPC8xgOP3cDdlJJnknhnERxR/JsIKt7uN3jqS5kqWxfLFxVH0VMzxc=
-script: bundle exec rspec spec
+  app: refinery-staging
+  on:
+    repo: mscoutermarsh/refinery_heroku
+script: bundle exec rspec
